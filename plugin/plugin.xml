@@ -13,7 +13,7 @@
 
     <extension point="org.knime.workbench.repository.nodes">
         <node category-path="/community/3d-e-chem/HelloWorldRationalInsights" factory-class="us.rationalinsights.HelloWorldRationalInsightsFactory"/>
-        <node category-path="/community/3d-e-chem/SecondRationalInsightsNode" factory-class="us.second.HelloWorldRationalInsightsFactory.java"/>
+        <node category-path="/community/3d-e-chem/HelloWorldRationalInsights" factory-class="us.second.HelloWorldRationalInsightsFactory.java"/>
     </extension>
 
 </plugin>
