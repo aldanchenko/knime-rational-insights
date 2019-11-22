@@ -20,23 +20,23 @@ import nl.esciencecenter.e3dchem.python.PythonOptionsPanel;
  * complex dialog please derive directly from
  * {@link org.knime.core.node.NodeDialogPane}.
  */
-public class HelloWorldRationalInsightsDialog extends DefaultNodeSettingsPane {
-	private PythonOptionsPanel<HelloWorldRationalInsightsConfig> pythonOptions;
-	HelloWorldRationalInsightsConfig config;
+public class CalcRationalInsightsDialog extends DefaultNodeSettingsPane {
+	private PythonOptionsPanel<CalcRationalInsightsConfig> pythonOptions;
+	CalcRationalInsightsConfig config;
 
     /**
      * New pane for configuring HelloWorldRationalInsights node dialog.
      * This is just a suggestion to demonstrate possible default dialog
      * components.
      */
-    protected HelloWorldRationalInsightsDialog() {
+    protected CalcRationalInsightsDialog() {
         super();
-		config = new HelloWorldRationalInsightsConfig();
+		config = new CalcRationalInsightsConfig();
 
         SettingsModelIntegerBounded count = config.getCount();
         addDialogComponent(new DialogComponentNumber(count, "Counter", 1, 5));
 
-        pythonOptions = new PythonOptionsPanel<HelloWorldRationalInsightsConfig>();
+        pythonOptions = new PythonOptionsPanel<CalcRationalInsightsConfig>();
 		addTab("Python options", pythonOptions);
     }
 
