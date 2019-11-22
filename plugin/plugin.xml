@@ -14,6 +14,7 @@
     <extension point="org.knime.workbench.repository.nodes">
         <node category-path="/community/3d-e-chem/HelloWorldRationalInsights" factory-class="us.rationalinsights.HelloWorldRationalInsightsFactory"/>
         <node category-path="/community/3d-e-chem/HelloWorldRationalInsights" factory-class="us.second.CalcRationalInsightsFactory"/>
+        <node category-path="/community/3d-e-chem/HelloWorldRationalInsights" factory-class="us.third.Python1RationalInsightsFactory"/>
     </extension>
 
 </plugin>

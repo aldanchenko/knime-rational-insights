@@ -1,4 +1,4 @@
-package us.second;
+package us.third;
 
 import org.knime.core.node.NodeView;
 
@@ -6,14 +6,14 @@ import org.knime.core.node.NodeView;
  * <code>NodeView</code> for the "HelloWorldRationalInsights" Node.
  *
  */
-public class CalcRationalInsightsView extends NodeView<CalcRationalInsightsModel> {
+public class Python1RationalInsightsView extends NodeView<Python1RationalInsightsModel> {
 
     /**
      * Creates a new view.
      *
      * @param nodeModel The model (class: {@link HelloWorldRationalInsightsModel})
      */
-    protected CalcRationalInsightsView(final CalcRationalInsightsModel nodeModel) {
+    protected Python1RationalInsightsView(final Python1RationalInsightsModel nodeModel) {
         super(nodeModel);
 // Testing some changes added
         // TODO instantiate the components of the view here.
@@ -28,8 +28,8 @@ public class CalcRationalInsightsView extends NodeView<CalcRationalInsightsModel
 
         // TODO retrieve the new model from your nodemodel and
         // update the view.
-        CalcRationalInsightsModel nodeModel =
-            (CalcRationalInsightsModel)getNodeModel();
+        Python1RationalInsightsModel nodeModel =
+            (Python1RationalInsightsModel)getNodeModel();
         assert nodeModel != null;
 
         // be aware of a possibly not executed nodeModel! The data you retrieve

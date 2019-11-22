@@ -6,21 +6,6 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <scm>
-        <url>https://github.com/rational-insights/https://github.com/aldanchenko/knime-rational-insights-plugin.git/</url>
-        <connection>scm:git:https://github.com/rational-insights/https://github.com/aldanchenko/knime-rational-insights-plugin.git.git</connection>
-        <developerConnection>scm:git:git@github.com:rational-insights/https://github.com/aldanchenko/knime-rational-insights-plugin.git.git</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
-    <issueManagement>
-        <system>GitHub</system>
-        <url>https://github.com/rational-insights/https://github.com/aldanchenko/knime-rational-insights-plugin.git/issues</url>
-    </issueManagement>
-    <ciManagement>
-        <system>Travis CI</system>
-        <url>http://travis-ci.org/rational-insights/https://github.com/aldanchenko/knime-rational-insights-plugin.git</url>
-    </ciManagement>
-
     <prerequisites>
         <maven>3.0</maven>
     </prerequisites>
@@ -142,34 +127,34 @@
 				</executions>
             </plugin>
         </plugins>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.eclipse.tycho</groupId>
-                    <artifactId>tycho-packaging-plugin</artifactId>
-                    <version>${tycho.version}</version>
-                    <dependencies>
-                        <dependency>
-                            <groupId>org.eclipse.tycho.extras</groupId>
-                            <artifactId>tycho-buildtimestamp-jgit</artifactId>
-                            <version>${tycho.extras.version}</version>
-                        </dependency>
-						<dependency>
-							<groupId>org.eclipse.tycho.extras</groupId>
-							<artifactId>tycho-sourceref-jgit</artifactId>
-							<version>${tycho.extras.version}</version>
-						</dependency>
-                    </dependencies>
-                    <configuration>
-                        <timestampProvider>jgit</timestampProvider>
-						<sourceReferences>
-							<generate>true</generate>
-						</sourceReferences>
-						<format>'v'yyyyMMddHHmm</format>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </pluginManagement>
+<!--        <pluginManagement>-->
+<!--            <plugins>-->
+<!--                <plugin>-->
+<!--                    <groupId>org.eclipse.tycho</groupId>-->
+<!--                    <artifactId>tycho-packaging-plugin</artifactId>-->
+<!--                    <version>${tycho.version}</version>-->
+<!--                    <dependencies>-->
+<!--                        <dependency>-->
+<!--                            <groupId>org.eclipse.tycho.extras</groupId>-->
+<!--                            <artifactId>tycho-buildtimestamp-jgit</artifactId>-->
+<!--                            <version>${tycho.extras.version}</version>-->
+<!--                        </dependency>-->
+<!--						<dependency>-->
+<!--							<groupId>org.eclipse.tycho.extras</groupId>-->
+<!--							<artifactId>tycho-sourceref-jgit</artifactId>-->
+<!--							<version>${tycho.extras.version}</version>-->
+<!--						</dependency>-->
+<!--                    </dependencies>-->
+<!--                    <configuration>-->
+<!--                        <timestampProvider>jgit</timestampProvider>-->
+<!--						<sourceReferences>-->
+<!--							<generate>true</generate>-->
+<!--						</sourceReferences>-->
+<!--						<format>'v'yyyyMMddHHmm</format>-->
+<!--                    </configuration>-->
+<!--                </plugin>-->
+<!--            </plugins>-->
+<!--        </pluginManagement>-->
     </build>
         <profiles>
                 <profile>
