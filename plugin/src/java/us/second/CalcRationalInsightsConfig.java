@@ -23,7 +23,7 @@ public class CalcRationalInsightsConfig extends PythonWrapperNodeConfig {
     // and used in the models execution method. The default components of the
     // dialog work with "SettingsModels".
     private final SettingsModelIntegerBounded m_count =
-        new SettingsModelIntegerBounded(HelloWorldRationalInsightsConfig.CFGKEY_COUNT,
+        new SettingsModelIntegerBounded(CalcRationalInsightsConfig.CFGKEY_COUNT,
                     CalcRationalInsightsConfig.DEFAULT_COUNT,
                     Integer.MIN_VALUE, Integer.MAX_VALUE);
 
